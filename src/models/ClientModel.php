@@ -11,7 +11,7 @@ class ClientModel {
 
 	function __construct() {
 		$this->helper = new Helpers();
-		$string = file_get_contents(dirname(__DIR__) . '../scripts/clients.json');
+		$string = file_get_contents(dirname(__DIR__) . '/../scripts/clients.json');
 		$this->clientData = json_decode($string, true);
 	}
 
